@@ -30,9 +30,9 @@ warpin post api/post --class
 warpin localAuth api/user/auth --function --chai
 warpin googleAuth api/user/auth --f --chai
 ```
-**Generates this structure**
-/Server/  
---/api/ 
+**Generates this structure**  
+/Server/    
+--/api/   
 ----/post/  
 ------post.js  
 ------post.spec.js  
