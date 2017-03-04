@@ -2,24 +2,31 @@
 
 
 ## How to use
-`$ npm install -g warp-prism`  
+`npm install -g warp-prism`  
 
 ### Generate Common Data Structures & Unit Test File    
-`$ warpin doublyLinkedList data-structures`  
+`warpin doublyLinkedList data-structures`  
 
-`$ cd data-structures`  
+`cd data-structures`  
 
-`$ warpin trie .`  
+`warpin trie .`  
 
 
 ### Generate Custom Objects, specify directory later
-`$ warpin zealot`  
+`warpin zealot`  
 
-`$ warpin adept`
+`warpin adept`
 
-`$ warpin highTemplar` 
+`cd psionic-matrix`  
 
+`ls -l`  
 
-`$ cd psionic-matrix`  
+### Provides flexibility for opinionated devs 
+`warpin article models --object`  
 
-`$ ls -l`  
+`warpin adept`
+
+`cd psionic-matrix`  
+
+`ls -l`  
+

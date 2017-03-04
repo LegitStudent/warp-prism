@@ -4,12 +4,12 @@ module.exports = (function (){
 	var ObjectTemplate = require('./objectTemplate')
 
 	var create =function (name,testrunner,options){
-		if (options['class']){
-			return new ClassTemplate(name,testrunner)
-		}else if (options['function']){
+		if (options['function']){
 			return new FunctionTemplate(name,testrunner)
 		}else if (options['object']){
 			return new ObjectTemplate(name,testrunner)
+		}else {
+			return new ClassTemplate(name,testrunner)
 		}
 	}
 	return {
