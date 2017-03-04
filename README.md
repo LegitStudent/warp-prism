@@ -30,13 +30,13 @@ warpin localAuth api/user/auth --function --chai
 warpin googleAuth api/user/auth --f --chai
 ```
 Generates this structure
-[server]  
---[api]  
-----[post]  
+/Server/  
+--/api/ 
+----/post/  
 ------post.js  
 ------post.spec.js  
-----[user]  
-------[auth]  
+----/user/  
+------/auth/  
 --------googleAuth.js  
 --------googleAuth.spec.js  
 --------localAuth.js  
