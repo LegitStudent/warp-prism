@@ -22,11 +22,13 @@
 `ls -l`  
 
 ### Provides flexibility for opinionated devs 
-`warpin article models --object`  
+```  
+warpin index api --object
+warpin user api/user --class --chai
+warpin post api/post --class
+warpin localAuth api/user/auth --function --chai
+warpin googleAuth api/user/auth --f --chai
+```
 
-`warpin adept`
 
-`cd psionic-matrix`  
-
-`ls -l`  
-
+See images http://imgur.com/a/k6RX9
