@@ -19,7 +19,22 @@
 
 `cd psionic-matrix`  
 
-`ls -l`  
+`ls -l` 
+
+**Most importantly these bad boys are ready for testing from the get go**  
+`mocha zealot.spec.js`  
+```
+
+
+  Zealot constructor
+    Prototype methods
+      ✓ should say hello
+
+
+  1 passing (7ms)
+
+
+```
 
 ### Provides flexibility for opinionated devs 
 **Lets say you start with some boiler plate code at dir /Server/**
@@ -47,7 +62,7 @@ warpin googleAuth api/user/auth --f --chai
 --index.js  
 --index.spec.js  
 
-**Example file: post.js**
+**Example file: post.js**  
 ```
 module.exports = (function (){
   function Post(){
@@ -58,6 +73,21 @@ module.exports = (function (){
   }
   return Post
 })()
+```
+
+**Example file: post.spec.js**
+```
+'use strict'
+var assert = require('assert');
+var Post = require('./post')
+describe('Post constructor',function (){
+  describe('Prototype methods',function (){
+    it('should say hello',function (){
+      var post = new Post();
+      assert.equal( 'My Life for Auir!', post.sayHello());
+    })
+  })
+})
 ```
 
 **Example file: googleAuth.js**
