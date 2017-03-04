@@ -29,22 +29,22 @@ warpin post api/post --class
 warpin localAuth api/user/auth --function --chai
 warpin googleAuth api/user/auth --f --chai
 ```
-
-[root]
---[api]
-----[post]
-------post.js
-------post.spec.js
-----[user]
-------[auth]
---------googleAuth.js
---------googleAuth.spec.js
---------localAuth.js
---------localAuth.spec.js
-------user.js
-------user.spec.js
---index.js
---index.spec.js
+Generates this structure
+[server]  
+--[api]  
+----[post]  
+------post.js  
+------post.spec.js  
+----[user]  
+------[auth]  
+--------googleAuth.js  
+--------googleAuth.spec.js  
+--------localAuth.js  
+--------localAuth.spec.js  
+------user.js  
+------user.spec.js  
+--index.js  
+--index.spec.js  
 
 
 See images http://imgur.com/a/k6RX9
