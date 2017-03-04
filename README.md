@@ -22,6 +22,7 @@
 `ls -l`  
 
 ### Provides flexibility for opinionated devs 
+**Lets say you start with some boiler plate code at dir /Server/**
 ```  
 warpin index api --object
 warpin user api/user --class --chai
@@ -29,7 +30,7 @@ warpin post api/post --class
 warpin localAuth api/user/auth --function --chai
 warpin googleAuth api/user/auth --f --chai
 ```
-Generates this structure  
+**Generates this structure**
 /Server/  
 --/api/ 
 ----/post/  
@@ -45,6 +46,46 @@ Generates this structure
 ------user.spec.js  
 --index.js  
 --index.spec.js  
+
+**Example file: post.js**
+```
+module.exports = (function (){
+  function Post(){
+  }
+  
+  Post.prototype.sayHello = function (){
+    return 'My Life for Auir!'
+  }
+  return Post
+})()
+```
+
+**Example file: googleAuth.js**
+```
+module.exports = (function (){
+  function googleAuth(){
+    return 'My Life for Auir!'
+  }
+  
+  return googleAuth
+})()
+```
+
+
+**Example file: googleAuth.spec.js**
+```
+'use strict'
+var expect = require('chai').expect;
+var googleAuth = require('./googleAuth')
+describe('googleAuth function',function (){
+  describe('General case',function (){
+    it('should say hello',function (){
+      expect(googleAuth()).to.equal('My Life for Auir!')
+    })
+  })
+})
+
+```
 
 
 See images http://imgur.com/a/k6RX9
