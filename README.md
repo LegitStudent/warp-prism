@@ -29,7 +29,7 @@ warpin post api/post --class
 warpin localAuth api/user/auth --function --chai
 warpin googleAuth api/user/auth --f --chai
 ```
-Generates this structure
+Generates this structure  
 /Server/  
 --/api/ 
 ----/post/  
