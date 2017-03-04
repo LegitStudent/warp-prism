@@ -1,6 +1,6 @@
 {
   "name": "warp-prism",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Warping in modules anywhere instantly",
   "main": "index.js",
   "preferGlobal": "true",
